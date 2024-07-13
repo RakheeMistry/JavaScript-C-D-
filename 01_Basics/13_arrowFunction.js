@@ -13,11 +13,11 @@ const user = {
 
 // console.log(this)
 
-// -----------------------------------------------
+//---------------- Difference of this keyword with normal and arrow function----------
 // function chai(){
 //     let username = "rakhee";
-//     // console.log(this);
-//     console.log(this.username)
+//     console.log(this);
+//     console.log(this.username);
 // }
 
 // chai()
@@ -27,11 +27,12 @@ const user = {
 // const chai = () => {
 //     let username = "rakhee";
 //     console.log(this);
-//     // console.log(this.username)
+//     console.log(this.username)
 // }
 
 // chai()
 
+//-------------Explicite arrow function--------------
 // const addTwo = (num1, num2) => {
 //     return num1 + num2
 // }
@@ -40,11 +41,13 @@ const user = {
 /* Note: use of {} in arrow function must need return keyword
          but use of () in arrow function not need return keyword */
 
-// implicite arrow function 
+//--------------Implicite arrow function-------------- 
 
-//const addThree = (num1, num2) => num1 + num2
+// const addThree = (num1, num2) => num1 + num2
+// console.log(addThree(7,9));
 
-const addFour = (num1, num2) => (num1 + num2);
+// const addFour = (num1, num2) => (num1 + num2);
+// console.log(addFour(3,5));
 
-const addFive = (num1, num2) => ({username: "rakhee"});
-
+// const addFive = () => ({username: "rakhee"});
+// console.log(addFive());
