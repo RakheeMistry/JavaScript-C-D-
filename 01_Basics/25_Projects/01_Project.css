@@ -1,0 +1,48 @@
+body{
+    margin: 0px;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: lightgrey;
+    padding: 10px 10px;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+nav a{
+    text-decoration: none;
+    border: 2px solid grey;
+    padding: 5px 20px;
+    background-color: lightgrey;
+    color: black;
+}
+.canvas{
+    text-align: center;
+}
+.canvas h1{
+    padding: 40px;
+}
+.canvas .button{
+   width: 25%;
+   flex-direction: row;
+   border: 1px solid black;
+   padding: 40px 50px;
+   margin: 10px;
+}
+#grey{
+    background-color: grey;
+}
+#white{
+    background-color: white;
+}
+#yellow{
+    background-color: yellow;
+}
+#blue{
+    background-color: blue;
+}
+.canvas h2{
+    padding: 40px;
+}
