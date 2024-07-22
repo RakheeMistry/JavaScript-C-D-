@@ -1,0 +1,35 @@
+body{
+    margin: 0px;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: lightgrey;
+    padding: 10px 10px;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+nav a{
+    text-decoration: none;
+    border: 2px solid grey;
+    padding: 5px 20px;
+    background-color: lightgrey;
+    color: black;
+}
+table,th,td{border: 1px solid #e7e7e7;}
+.project{
+    background-color: #1c1c1c;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+}
+.color{
+    color: aliceblue;
+    display: flex;
+    flex-direction: row;
+}
