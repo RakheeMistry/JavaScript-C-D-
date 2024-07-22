@@ -1,0 +1,20 @@
+body{
+    margin: 0px;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: lightgrey;
+    padding: 10px 10px;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+nav a{
+    text-decoration: none;
+    border: 2px solid grey;
+    padding: 5px 20px;
+    background-color: lightgrey;
+    color: black;
+}
