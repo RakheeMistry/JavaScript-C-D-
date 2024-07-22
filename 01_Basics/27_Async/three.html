@@ -1,22 +1,40 @@
 <!DOCTYPE html>
-        <html lang="en">
-            <head>
-                <meta charset="UTF-8">
-                <meta http-equiv="X-UA-Compatible" content="IE=edge">
-                <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                <title>HTML Async</title>
-            </head>
-            <body>
-                <h1>Chai aur Javascript</h1>
-                <button id="start">Start</button>
-                <button id="stop">Stop</button>
-            </body>
-            <script>
-                const sayDate = function(str){
-                    console.log(str, Date.now());
-                }
-                const intervalId = setInterval(sayDate,1000, "hi");
+<html lang="en">
 
-                clearInterval(intervalId)
-            </script>
-        </html><button id="stop">Stop</button>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Async</title>
+</head>
+
+<body>
+    <h1>Chai aur Javascript</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    let intervalId;
+    
+    const startButton = function () {
+
+        const sayDate = function (str) {
+            console.log(str, Date.now());
+        }
+
+         if (!intervalId) {
+            intervalId = setInterval(sayDate, 1000, "hi");
+        }
+
+    }
+
+    const stopButton = function () {
+        clearInterval(intervalId);
+        intervalId = null;
+    };
+
+    document.getElementById('start').addEventListener('click', startButton);
+    document.getElementById('stop').addEventListener('click', stopButton);
+</script>
+
+</html>
